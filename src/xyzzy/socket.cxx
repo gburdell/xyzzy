@@ -23,6 +23,7 @@
 #include <string.h>
 #include <cstdio>
 #include <errno.h>
+#include <unistd.h>
 #include "xyzzy/socket.hxx"
 
 namespace xyzzy

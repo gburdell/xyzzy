@@ -1,0 +1,102 @@
+/Library/Developer/CommandLineTools/usr/bin/make debug.objdir VARIANT=debug
+mkdir -p build/debug
+make[2]: `build/debug/array.phonyo' is up to date.
+make[2]: `build/debug/assert.phonyo' is up to date.
+make[2]: `build/debug/bitvec.phonyo' is up to date.
+make[2]: `build/debug/delta.phonyo' is up to date.
+make[2]: `build/debug/exception.phonyo' is up to date.
+src/xyzzy/fixedpt.cxx:189:32: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        ASSERT_TRUE(0 == ((~(TInt64)0 << cNumBits) & val));     //only using low 32 bits
+                           ~~~~~~~~~~ ^
+src/xyzzy/assert.hxx:29:46: note: expanded from macro 'ASSERT_TRUE'
+#define ASSERT_TRUE(_cond) xyzzy::assertTrue(_cond, #_cond, __FILE__, __LINE__)
+                                             ^~~~~
+1 warning generated.
+make[2]: `build/debug/fixedpt.phonyo' is up to date.
+make[2]: `build/debug/indent.phonyo' is up to date.
+make[2]: `build/debug/message.phonyo' is up to date.
+make[2]: `build/debug/portable.phonyo' is up to date.
+make[2]: `build/debug/regexp.phonyo' is up to date.
+src/xyzzy/semaphore.cxx:33:12: warning: 'sem_init' is deprecated [-Wdeprecated-declarations]
+        if (-1 == sem_init(p, shared?1:0, val))
+                  ^
+/usr/include/sys/semaphore.h:55:5: note: 'sem_init' has been explicitly marked deprecated here
+int sem_init(sem_t *, int, unsigned int) __deprecated;
+    ^
+src/xyzzy/semaphore.cxx:44:12: warning: 'sem_getvalue' is deprecated [-Wdeprecated-declarations]
+        if (-1 == sem_getvalue(p, &rval))
+                  ^
+/usr/include/sys/semaphore.h:54:5: note: 'sem_getvalue' has been explicitly marked deprecated here
+int sem_getvalue(sem_t * __restrict, int * __restrict) __deprecated;
+    ^
+2 warnings generated.
+make[2]: `build/debug/semaphore.phonyo' is up to date.
+make[2]: `build/debug/shmalloc.phonyo' is up to date.
+src/xyzzy/socket.cxx:84:5: error: use of undeclared identifier 'close'
+    close(m_sockId);
+    ^
+src/xyzzy/socket.cxx:134:7: error: no type named 'close' in the global namespace
+    ::close(m_id);
+    ~~^
+src/xyzzy/socket.cxx:152:7: error: no type named 'close' in the global namespace
+    ::close(m_sid);
+    ~~^
+3 errors generated.
+make[1]: [build/debug/socket.d] Error 1 (ignored)
+make[2]: `build/debug/socket.phonyo' is up to date.
+src/xyzzy/stringtmpl.cxx:86:3: warning: 'delete' applied to a pointer that was allocated with 'new[]'; did you mean 'delete[]'? [-Wmismatched-new-delete]
+                delete buf;
+                ^
+                      []
+src/xyzzy/stringtmpl.cxx:48:21: note: allocated with 'new[]' here
+                char *const buf = new char[cMax];
+                                  ^
+1 warning generated.
+make[2]: `build/debug/stringtmpl.phonyo' is up to date.
+make[2]: `build/debug/util.phonyo' is up to date.
+/Library/Developer/CommandLineTools/usr/bin/make dist/debug/MacOSX/xyzzy.a VARIANT=debug
+gcc -Isrc -DDEBUG -g -c -o build/debug/array.o src/xyzzy/array.cxx
+gcc -Isrc -DDEBUG -g -c -o build/debug/assert.o src/xyzzy/assert.cxx
+gcc -Isrc -DDEBUG -g -c -o build/debug/bitvec.o src/xyzzy/bitvec.cxx
+gcc -Isrc -DDEBUG -g -c -o build/debug/delta.o src/xyzzy/delta.cxx
+gcc -Isrc -DDEBUG -g -c -o build/debug/exception.o src/xyzzy/exception.cxx
+gcc -Isrc -DDEBUG -g -c -o build/debug/fixedpt.o src/xyzzy/fixedpt.cxx
+src/xyzzy/fixedpt.cxx:189:32: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        ASSERT_TRUE(0 == ((~(TInt64)0 << cNumBits) & val));     //only using low 32 bits
+                           ~~~~~~~~~~ ^
+src/xyzzy/assert.hxx:29:46: note: expanded from macro 'ASSERT_TRUE'
+#define ASSERT_TRUE(_cond) xyzzy::assertTrue(_cond, #_cond, __FILE__, __LINE__)
+                                             ^~~~~
+1 warning generated.
+gcc -Isrc -DDEBUG -g -c -o build/debug/indent.o src/xyzzy/indent.cxx
+gcc -Isrc -DDEBUG -g -c -o build/debug/message.o src/xyzzy/message.cxx
+gcc -Isrc -DDEBUG -g -c -o build/debug/portable.o src/xyzzy/portable.cxx
+gcc -Isrc -DDEBUG -g -c -o build/debug/regexp.o src/xyzzy/regexp.cxx
+gcc -Isrc -DDEBUG -g -c -o build/debug/semaphore.o src/xyzzy/semaphore.cxx
+src/xyzzy/semaphore.cxx:33:12: warning: 'sem_init' is deprecated [-Wdeprecated-declarations]
+        if (-1 == sem_init(p, shared?1:0, val))
+                  ^
+/usr/include/sys/semaphore.h:55:5: note: 'sem_init' has been explicitly marked deprecated here
+int sem_init(sem_t *, int, unsigned int) __deprecated;
+    ^
+src/xyzzy/semaphore.cxx:44:12: warning: 'sem_getvalue' is deprecated [-Wdeprecated-declarations]
+        if (-1 == sem_getvalue(p, &rval))
+                  ^
+/usr/include/sys/semaphore.h:54:5: note: 'sem_getvalue' has been explicitly marked deprecated here
+int sem_getvalue(sem_t * __restrict, int * __restrict) __deprecated;
+    ^
+2 warnings generated.
+gcc -Isrc -DDEBUG -g -c -o build/debug/shmalloc.o src/xyzzy/shmalloc.cxx
+gcc -Isrc -DDEBUG -g -c -o build/debug/socket.o src/xyzzy/socket.cxx
+src/xyzzy/socket.cxx:84:5: error: use of undeclared identifier 'close'
+    close(m_sockId);
+    ^
+src/xyzzy/socket.cxx:134:7: error: no type named 'close' in the global namespace
+    ::close(m_id);
+    ~~^
+src/xyzzy/socket.cxx:152:7: error: no type named 'close' in the global namespace
+    ::close(m_sid);
+    ~~^
+3 errors generated.
+make[1]: *** [build/debug/socket.o] Error 1
+make: *** [debug] Error 2

@@ -20,6 +20,7 @@
 #OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 #THE SOFTWARE.
 
+CC := g++
 LIBNM    = xyzzy
 SRC_DIR  = src/${LIBNM}
 
@@ -77,7 +78,7 @@ all: debug release profile ;
 
 .PRECIOUS: ${OBJ_DIR}/%.d
 ${OBJ_DIR}/%.d: ${SRC_DIR}/%.cxx
-	-@gcc ${CFLAGS} -MMD -MF ${@} ${<} -c -o ${@D}/${*}.phonyo
+	-@${CC} ${CFLAGS} -MMD -MF ${@} ${<} -c -o ${@D}/${*}.phonyo
 	@cat /dev/null > ${@D}/${*}.phonyo
 	@echo ",touch \$${@}" | tr ',' '\t' >> ${@}
 
@@ -86,7 +87,7 @@ PHONY: %.doto
 	@${MAKE} -f ${<}
 
 ${OBJ_DIR}/%.o: ${OBJ_DIR}/%.phonyo
-	gcc ${CFLAGS} -c -o ${@} ${SRC_DIR}/${*}.cxx
+	${CC} ${CFLAGS} -c -o ${@} ${SRC_DIR}/${*}.cxx
 
 ${DIST_DIR}/${VARIANT}/${OS}/${LIBNM}.a: ${O_FILES}
 	test -d ${@D} || mkdir -p ${@D}

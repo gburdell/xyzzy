@@ -236,7 +236,7 @@ private:
 /**
  *	Specialize for T=TUint32
  */
-template<unsigned LB, unsigned RB = ~0>
+template<unsigned LB, unsigned RB = 0x7FFFFFFF>
 class TBitVec : public PTBitVec<TUint32>
 {
 public:
@@ -264,7 +264,7 @@ public:
 /**
  *	Specialize for T=TUint64
  */
-template<unsigned LB, unsigned RB = ~0>
+template<unsigned LB, unsigned RB = 0x7FFFFFFF>
 class TBitVec64 : public PTBitVec<TUint64>
 {
 public:

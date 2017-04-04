@@ -83,7 +83,7 @@ namespace xyzzy
 			}
 		}
 		ifs.close();
-		delete buf;
+		delete[] buf;
 	}
 
 	void 
