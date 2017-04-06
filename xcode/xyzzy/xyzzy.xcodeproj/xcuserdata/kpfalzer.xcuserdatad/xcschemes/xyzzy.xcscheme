@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F455C78A1E93F19A00F13033"
-               BuildableName = "libxyzzy.a"
+               BuildableName = "xyzzy.a"
                BlueprintName = "xyzzy"
                ReferencedContainer = "container:xyzzy.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F455C78A1E93F19A00F13033"
-            BuildableName = "libxyzzy.a"
+            BuildableName = "xyzzy.a"
             BlueprintName = "xyzzy"
             ReferencedContainer = "container:xyzzy.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F455C78A1E93F19A00F13033"
-            BuildableName = "libxyzzy.a"
+            BuildableName = "xyzzy.a"
             BlueprintName = "xyzzy"
             ReferencedContainer = "container:xyzzy.xcodeproj">
          </BuildableReference>

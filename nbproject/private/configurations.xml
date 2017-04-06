@@ -54,6 +54,58 @@
       </df>
       <df name="xcode">
         <df name="xyzzy">
+          <df name="DerivedData">
+            <df name="ModuleCache">
+            </df>
+            <df name="xyzzy">
+              <df name="Build">
+                <df name="Intermediates">
+                  <df name="xyzzy.build">
+                    <df name="Debug">
+                      <df name="xyzzy.build">
+                        <df name="Objects-normal">
+                          <df name="x86_64">
+                          </df>
+                        </df>
+                      </df>
+                    </df>
+                  </df>
+                </df>
+                <df name="Products">
+                  <df name="Debug">
+                  </df>
+                </df>
+              </df>
+              <df name="Index">
+                <df name="Debug">
+                  <df name="macosx10.11-x86_64">
+                    <df name="xyzzy.xcindex">
+                    </df>
+                  </df>
+                </df>
+                <df name="xyzzy.xcindex">
+                </df>
+              </df>
+              <df name="Logs">
+                <df name="Build">
+                </df>
+                <df name="Debug">
+                </df>
+                <df name="GPUDebuggerLog">
+                </df>
+                <df name="Install">
+                </df>
+                <df name="Issues">
+                </df>
+                <df name="SCM">
+                </df>
+                <df name="Test">
+                </df>
+              </df>
+              <df name="TextIndex">
+              </df>
+            </df>
+          </df>
           <df name="src">
             <df name="xyzzy">
               <in>array.cxx</in>
