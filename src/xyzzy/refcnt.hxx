@@ -21,7 +21,7 @@
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //THE SOFTWARE.
 
-#if	!defined(_xyzzy_refcnt_hxx_)
+#if !defined(_xyzzy_refcnt_hxx_)
 #define  _xyzzy_refcnt_hxx_
 
 #include "xyzzy/exception.hxx"
@@ -49,10 +49,18 @@ namespace xyzzy {
         }
 
         bool decr() {
-            if (1 > --m_cnt) {
-                delete mp_dat;
+            bool rm = false;
+            if (0 < m_cnt) {
+                if (0 == --m_cnt) {
+                    rm = true;
+                    delete mp_dat;
+                }
             }
-            return (1 > m_cnt) ? true : false;
+            return rm;
+        }
+        
+        unsigned incr() {
+            return ++m_cnt;
         }
 
         ~_TRcPtr() {
@@ -122,10 +130,15 @@ namespace xyzzy {
             return *getPtr();
         }
 
+        bool decr();
+        
+        unsigned incr() {
+            return m_p->incr();
+        }
+        
         ~PTRcObjPtr();
 
     private:
-        void decr();
 
         _TRcPtr *m_p;
 
@@ -221,10 +234,12 @@ namespace xyzzy {
             }
 
             bool decr() {
-                if (1 > --m_cnt) {
-                    delete mp_dat;
+                if (0 < m_cnt) {
+                    if (0 == --m_cnt) {
+                        delete mp_dat;
+                    }
                 }
-                return (1 > m_cnt) ? true : false;
+                return (0 == m_cnt);
             }
 
             ~TRcPtr2() {
@@ -326,11 +341,13 @@ namespace xyzzy {
     }
 
     template<class T>
-    void
+    bool
     PTRcObjPtr<T>::decr() {
-        if (true == m_p->decr()) {
+        bool rm = m_p->decr();
+        if (rm) {
             delete m_p;
         }
+        return rm;
     }
 
     template<class T>
@@ -408,4 +425,4 @@ namespace xyzzy {
 
 #undef SET_T
 
-#endif	//_xyzzy_refcnt_hxx_
+#endif //_xyzzy_refcnt_hxx_

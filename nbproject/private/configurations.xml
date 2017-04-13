@@ -69,6 +69,8 @@
                         </df>
                       </df>
                     </df>
+                    <df name="Release">
+                    </df>
                   </df>
                 </df>
                 <df name="Products">
@@ -89,17 +91,7 @@
               <df name="Logs">
                 <df name="Build">
                 </df>
-                <df name="Debug">
-                </df>
-                <df name="GPUDebuggerLog">
-                </df>
-                <df name="Install">
-                </df>
                 <df name="Issues">
-                </df>
-                <df name="SCM">
-                </df>
-                <df name="Test">
                 </df>
               </df>
               <df name="TextIndex">

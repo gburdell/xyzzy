@@ -267,6 +267,7 @@
 				EXECUTABLE_PREFIX = "";
 				HEADER_SEARCH_PATHS = src;
 				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -277,6 +278,7 @@
 				EXECUTABLE_PREFIX = "";
 				HEADER_SEARCH_PATHS = src;
 				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -300,6 +302,7 @@
 				F455C7911E93F19A00F13033 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
