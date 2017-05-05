@@ -39,7 +39,7 @@ namespace xyzzy {
     static
     void
     dumpBacktrace(ostream &os = cerr) {
-#ifdef DEBUG
+#ifdef xxDEBUG
         os << "Stack dump:" << endl 
                 << "Use 'addr2line' to convert to actual source-code locations"
                 << endl;

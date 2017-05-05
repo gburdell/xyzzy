@@ -92,6 +92,7 @@ ${OBJ_DIR}/%.o: ${OBJ_DIR}/%.phonyo
 ${DIST_DIR}/${VARIANT}/${OS}/${LIBNM}.a: ${O_FILES}
 	test -d ${@D} || mkdir -p ${@D}
 	ar -rs ${@} ${O_FILES}
+	ranlib ${@}
 
 .PHONY: clean
 clean:
