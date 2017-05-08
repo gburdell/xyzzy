@@ -23,6 +23,8 @@
           <in>autoptr.hxx</in>
           <in>bitvec.cxx</in>
           <in>bitvec.hxx</in>
+          <in>date.cxx</in>
+          <in>date.hxx</in>
           <in>delta.cxx</in>
           <in>delta.hxx</in>
           <in>exception.cxx</in>
@@ -111,6 +113,8 @@
               <in>autoptr.hxx</in>
               <in>bitvec.cxx</in>
               <in>bitvec.hxx</in>
+              <in>date.cxx</in>
+              <in>date.hxx</in>
               <in>delta.cxx</in>
               <in>delta.hxx</in>
               <in>exception.cxx</in>

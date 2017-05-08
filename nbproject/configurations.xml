@@ -7,6 +7,7 @@
           <in>array.cxx</in>
           <in>assert.cxx</in>
           <in>bitvec.cxx</in>
+          <in>date.cxx</in>
           <in>delta.cxx</in>
           <in>exception.cxx</in>
           <in>fixedpt.cxx</in>
@@ -130,6 +131,8 @@
       <item path="src/xyzzy/assert.cxx" ex="false" tool="1" flavor2="4">
       </item>
       <item path="src/xyzzy/bitvec.cxx" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/xyzzy/date.cxx" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/xyzzy/delta.cxx" ex="false" tool="1" flavor2="4">
       </item>

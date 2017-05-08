@@ -22,6 +22,7 @@
 		F455C7AD1E93F41500F13033 /* socket.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F455C79E1E93F41500F13033 /* socket.cxx */; };
 		F455C7AE1E93F41500F13033 /* stringtmpl.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F455C79F1E93F41500F13033 /* stringtmpl.cxx */; };
 		F455C7AF1E93F41500F13033 /* util.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F455C7A01E93F41500F13033 /* util.cxx */; };
+		F4A2D0711EC0EA100087E80B /* date.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F4A2D0701EC0EA100087E80B /* date.cxx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		F455C79E1E93F41500F13033 /* socket.cxx */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = socket.cxx; path = ../../src/xyzzy/socket.cxx; sourceTree = "<group>"; };
 		F455C79F1E93F41500F13033 /* stringtmpl.cxx */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = stringtmpl.cxx; path = ../../src/xyzzy/stringtmpl.cxx; sourceTree = "<group>"; };
 		F455C7A01E93F41500F13033 /* util.cxx */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = util.cxx; path = ../../src/xyzzy/util.cxx; sourceTree = "<group>"; };
+		F4A2D0701EC0EA100087E80B /* date.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = date.cxx; path = ../../src/xyzzy/date.cxx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		F455C7821E93F19A00F13033 = {
 			isa = PBXGroup;
 			children = (
+				F4A2D0701EC0EA100087E80B /* date.cxx */,
 				F455C7921E93F41500F13033 /* fixedpt.cxx */,
 				F455C7931E93F41500F13033 /* semaphore.cxx */,
 				F455C7941E93F41500F13033 /* array.cxx */,
@@ -158,6 +161,7 @@
 				F455C7A51E93F41500F13033 /* bitvec.cxx in Sources */,
 				F455C7A61E93F41500F13033 /* delta.cxx in Sources */,
 				F455C7A71E93F41500F13033 /* exception.cxx in Sources */,
+				F4A2D0711EC0EA100087E80B /* date.cxx in Sources */,
 				F455C7A81E93F41500F13033 /* indent.cxx in Sources */,
 				F455C7A91E93F41500F13033 /* message.cxx in Sources */,
 				F455C7AA1E93F41500F13033 /* portable.cxx in Sources */,
