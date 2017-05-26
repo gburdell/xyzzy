@@ -58,7 +58,7 @@ namespace xyzzy {
             }
             return rm;
         }
-        
+
         unsigned incr() {
             return ++m_cnt;
         }
@@ -131,11 +131,11 @@ namespace xyzzy {
         }
 
         bool decr();
-        
+
         unsigned incr() {
             return m_p->incr();
         }
-        
+
         ~PTRcObjPtr();
 
     private:

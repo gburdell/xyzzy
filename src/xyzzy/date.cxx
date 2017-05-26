@@ -34,6 +34,7 @@ namespace xyzzy {
 
         time(&rawtime);
         timeinfo = localtime(&rawtime);
-        return asctime(timeinfo);
+        std::string asStr = asctime(timeinfo);
+        return asStr.substr(0, asStr.length()-1); //drop newline
     }
 }

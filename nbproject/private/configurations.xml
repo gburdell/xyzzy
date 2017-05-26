@@ -13,6 +13,10 @@
           <df name="MacOSX">
           </df>
         </df>
+        <df name="release">
+          <df name="MacOSX">
+          </df>
+        </df>
       </df>
       <df name="src">
         <df name="xyzzy">
