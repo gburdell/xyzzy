@@ -136,6 +136,10 @@ namespace xyzzy {
             return m_p->incr();
         }
 
+        unsigned getRefCnt() const {
+            return m_p->m_cnt;
+        }
+        
         ~PTRcObjPtr();
 
     private:
