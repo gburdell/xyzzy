@@ -276,6 +276,7 @@
 				INSTALL_PATH = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = /Users/kwpfalzer/projects/xyzzy/xcode/xyzzy;
 			};
 			name = Debug;
 		};
@@ -292,6 +293,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = /Users/kwpfalzer/projects/xyzzy/xcode/xyzzy;
 			};
 			name = Release;
 		};

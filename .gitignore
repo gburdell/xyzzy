@@ -1,2 +1,8 @@
 build/
 dist/
+.DS_Store
+nbproject/private/MacOS.properties
+xcode/xyzzy/.DS_Store
+xcode/xyzzy/Debug/
+xcode/xyzzy/DerivedData/
+xcode/xyzzy/xyzzy.build/
